@@ -1,0 +1,28 @@
+{
+  "name": "dead-persons-switch",
+  "version": "1.0.0",
+  "description": "A dead person's switch for IFTTT or pretty much any other webhookable service",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ben-ng/dead-persons-switch.git"
+  },
+  "keywords": [
+    "ifttt",
+    "iot",
+    "webhook"
+  ],
+  "author": "Ben Ng <me@benng.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ben-ng/dead-persons-switch/issues"
+  },
+  "engines": {
+    "node": "7.x.x"
+  },
+  "homepage": "https://github.com/ben-ng/dead-persons-switch#readme"
+}

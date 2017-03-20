@@ -1,0 +1,35 @@
+{
+  "name": "Dead Person's Switch",
+  "description": "A dead person's switch for IFTTT or pretty much any other webhookable service",
+  "keywords": [
+    "ifttt",
+    "iot",
+    "webhook"
+  ],
+  "repository": "https://github.com/ben-ng/dead-persons-switch",
+  "env": {
+    "SECRET": {
+      "description": "The secret key to your server.",
+      "generator": "secret"
+    },
+    "WEBHOOK_URL": {
+      "description": "The URL to notify when a trigger fails to respond",
+      "value": "https://maker.ifttt.com/trigger/dead-persons-switch/with/key/[KEY]"
+    },
+    "TRIGGERS": {
+      "description": "The triggers this server is aware of",
+      "value": "test:60000"
+    },
+    "WEB_CONCURRENCY": {
+      "description": "The number of processes to run. Must be 1.",
+      "value": "1"
+    }
+  },
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "node test.js"
+      }
+    }
+  }
+}
